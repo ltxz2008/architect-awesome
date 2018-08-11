@@ -121,7 +121,8 @@
 * [中间件](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#中间件)
 	* [Web Server](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#web-server)
 		* [Nginx](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#nginx)
-		* [OpenResty](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#openresty)
+		* [OpenResty](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#openresty)  
+		* [Tengine](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#Tengine)  
 		* [Apache Httpd](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#apache-httpd)
 		* [Tomcat](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#tomcat)
 			* [架构原理](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#架构原理)
@@ -995,7 +996,11 @@ APM —  Application Performance Management
 ### OpenResty
 * [官方网站](http://openresty.org/cn/)
 * [《浅谈 OpenResty》](http://www.linkedkeeper.com/detail/blog.action?bid=1034)
-	* 通过 Lua 模块可以在Nginx上进行开发。 
+	* 通过 Lua 模块可以在Nginx上进行开发。   
+* [agentzh 的 Nginx 教程](https://openresty.org/download/agentzh-nginx-tutorials-zhcn.html)  
+	
+### Tengine
+* [官方网站](http://tengine.taobao.org/)  
 
 ### Apache Httpd
 * [官方网站](http://httpd.apache.org/)
@@ -2288,8 +2293,10 @@ TODO
 	* [中国大数据](http://www.thebigdata.cn/) 
 
 * 其他专题网站：
+	* [InfoQ](http://www.infoq.com/cn/)
+		* 偏重于基础架构、运维方向
 	* [DockerInfo](http://www.dockerinfo.net/)
-		* 专注于 Docker 应用及咨询、教程的网站。
+		* 专注于 Docker 应用及咨询、教程的网站
 	* [Linux公社](https://www.linuxidc.com/)
 		* Linux 主题社区
 
@@ -2318,28 +2325,28 @@ TODO
 
 #### 开发方面
 
-* 《阿里巴巴Java开发手册》[京东](https://union-click.jd.com/jdc?d=bVKwZQ) [淘宝](https://s.taobao.com/search?q=阿里巴巴Java开发手册)
+* 《阿里巴巴Java开发手册》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=BfL5CR)
 
 #### 架构方面
-* 《软件架构师的12项修炼：技术技能篇》[京东](https://union-click.jd.com/jdc?d=gXvRd8) [淘宝](https://s.taobao.com/search?q=软件架构师的12项修炼：技术技能篇)
-* 《架构之美》[京东](https://union-click.jd.com/jdc?d=xJit5I) [淘宝](https://s.taobao.com/search?q=架构之美)
-* 《分布式服务架构》[京东](https://union-click.jd.com/jdc?d=JS5Od9) [淘宝](https://s.taobao.com/search?q=分布式服务架构)
-* 《聊聊架构》 [京东](https://union-click.jd.com/jdc?d=FHooH4) [淘宝](https://s.taobao.com/search?q=聊聊架构)
-* 《云原生应用架构实践》[京东](https://union-click.jd.com/jdc?d=orkJSj) [淘宝](https://s.taobao.com/search?q=云原生应用架构实践)
-* 《亿级流量网站架构核心技术》[京东](https://union-click.jd.com/jdc?d=RnOSP5) [淘宝](https://s.taobao.com/search?q=亿级流量网站架构核心技术)
-* 《淘宝技术这十年》[京东](https://union-click.jd.com/jdc?d=LwrDfD) [淘宝](https://s.taobao.com/search?q=淘宝技术这十年)
-* 《企业IT架构转型之道-中台战略思想与架构实战》 [京东](https://union-click.jd.com/jdc?d=89pAEm) [淘宝](https://s.taobao.com/search?q=企业IT架构转型之道)
+* 《软件架构师的12项修炼：技术技能篇》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=rTlo0m)
+* 《架构之美》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=1KECBZ) 
+* 《分布式服务架构》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=hkzqtK) 
+* 《聊聊架构》 [详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=A8Nd6Z) 
+* 《云原生应用架构实践》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=D4WCpd) 
+* 《亿级流量网站架构核心技术》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=Rdmd21)
+* 《淘宝技术这十年》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=CoUdGG)
+* 《企业IT架构转型之道-中台战略思想与架构实战》 [详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=BxS6eI) 
 
-* 《高可用架构（第1卷）》[京东](https://item.jd.com/12195481.html) [淘宝](https://s.taobao.com/search?q=高可用架构)
+* 《高可用架构（第1卷）》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=BcjUwS) 
 
 #### 技术管理方面
-* 《CTO说》[京东](https://union-click.jd.com/jdc?d=zhTZyr) [淘宝](https://s.taobao.com/search?q=CTO说)
-* 《技术管理之巅》[京东](https://union-click.jd.com/jdc?d=LgRBUW) [淘宝](https://s.taobao.com/search?q=技术管理之巅)
-* 《网易一千零一夜：互联网产品项目管理实战》[京东](https://union-click.jd.com/jdc?d=jcRz2r) [淘宝](https://s.taobao.com/search?q=网易一千零一夜：互联网产品项目管理实战)
+* 《CTO说》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=Gl3QAo) 
+* 《技术管理之巅》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=MeloLt)
+* 《网易一千零一夜：互联网产品项目管理实战》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=qPuqMg) 
 
 #### 基础理论
-* 《数学之美》[京东](https://union-click.jd.com/jdc?d=ghIES2) [淘宝](https://s.taobao.com/search?q=数学之美)
-* 《编程珠玑》[京东](https://union-click.jd.com/jdc?d=YmhdEu) [淘宝](https://s.taobao.com/search?q=编程珠玑)
+* 《数学之美》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=0seUpO) 
+* 《编程珠玑》[详情](https://www.coderxing.com/r.php?r=https://union-click.jd.com/jdc?d=I7jj9r) 
 
 #### 工具方面
 TODO
