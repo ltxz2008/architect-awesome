@@ -8,7 +8,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/xingshaocheng/architect-awesome.svg?style=flat&label=Fork)](https://github.com/xingshaocheng/architect-awesome/fork)
 [![GitHub watchers](https://img.shields.io/github/watchers/xingshaocheng/architect-awesome.svg?style=flat&label=Watch)](https://github.com/xingshaocheng/architect-awesome/watchers)
 
-**更新于20180624**
+**更新于20180916**
 
 
 * [数据结构](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#数据结构)
@@ -23,7 +23,7 @@
 		* [平衡二叉树](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#平衡二叉树)
 		* [二叉查找树（BST）](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#二叉查找树bst)
 		* [红黑树](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#红黑树)
-		* [B-，B+，B*树](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#b-bb树)
+		* [B，B+，B*树](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#b-bb树)
 		* [LSM 树](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#lsm-树)
 	* [BitSet](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#bitset)
 * [常用算法](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#常用算法)
@@ -406,12 +406,12 @@
 	* 添加阶段后，左旋或者右旋从而再次达到平衡。 
 * [《浅谈算法和数据结构: 九 平衡查找树之红黑树》](http://www.cnblogs.com/yangecnu/p/Introduce-Red-Black-Tree.html)
 
-### B-，B+，B*树
+### B，B+，B*树
 MySQL是基于B+树聚集索引组织表
 
 * [《B-树，B+树，B\*树详解》](https://blog.csdn.net/aqzwss/article/details/53074186)
 * [《B-树，B+树与B\*树的优缺点比较》](https://blog.csdn.net/bigtree_3721/article/details/73632405)
-	* B+ 树的叶子节点链表结构相比于 B- 树便于扫库，和范围检索。
+	* B+树的叶子节点链表结构相比于 B-树便于扫库，和范围检索。
 ### LSM 树
 
 LSM（Log-Structured Merge-Trees）和 B+ 树相比，是牺牲了部分读的性能来换取写的性能(通过批量写入)，实现读写之间的。
@@ -589,7 +589,7 @@ KMP：Knuth-Morris-Pratt算法（简称KMP）
 	* 幻读的例子非常清楚。
 	* 通过 SELECT ... FOR UPDATE 解决。
 	
-* [《一篇文章带你读懂MySQL和InnoDB》](http://database.51cto.com/art/201804/570101.htm)
+* [《一篇文章带你读懂MySQL和InnoDB》](https://draveness.me/mysql-innodb)
 	* 图解脏读、不可重复读、幻读问题。
 
 
@@ -875,7 +875,7 @@ APM —  Application Performance Management
 * [《APP埋点常用的统计工具、埋点目标和埋点内容》](http://www.25xt.com/company/17066.html)
 	* 第三方统计：友盟、百度移动、魔方、App Annie、talking data、神策数据等。
 
-* [《美团点评前端无痕埋点实践》](https://tech.meituan.com/mt-mobile-analytics-practice.html)
+* [《美团点评前端无痕埋点实践》](https://tech.meituan.com/mt_mobile_analytics_practice.html)
 	* 所谓无痕、即通过可视化工具配置采集节点，在前端自动解析配置并上报埋点数据，而非硬编码。 
 
 
@@ -1231,6 +1231,7 @@ TODO
 ### Sharding Jdbc
 
 * [官网](http://shardingjdbc.io/)
+* [源码解析](http://www.iocoder.cn/categories/Sharding-JDBC/?vip&architect-awesome)
 
 ## 日志系统
 
@@ -1403,7 +1404,12 @@ MyISAM 是非聚集，InnoDB 是聚集
 #### 复合索引
 
 * [《复合索引的优点和注意事项》](https://www.cnblogs.com/summer0space/p/7247778.html)
-
+	* 文中有一处错误：
+	> 对于复合索引,在查询使用时,最好将条件顺序按找索引的顺序,这样效率最高; select * from table1 where col1=A AND col2=B AND col3=D 如果使用 where col2=B AND col1=A 或者 where col2=B 将不会使用索引
+	* 原文中提到索引是按照“col1，col2，col3”的顺序创建的，而mysql在按照最左前缀的索引匹配原则，且会自动优化 where 条件的顺序，当条件中只有 col2=B AND col1=A 时，会自动转化为 col1=A AND col2=B，所以依然会使用索引。
+	
+* [《MySQL查询where条件的顺序对查询效率的影响》](https://www.cnblogs.com/acode/p/7489258.html)
+	
 #### 自适应哈希索引(AHI)
 
 * [《InnoDB存储引擎——自适应哈希索引》](https://blog.csdn.net/Linux_ever/article/details/62043708)
@@ -2055,7 +2061,6 @@ TODO
 * [《什么是Service Mesh？》](https://time.geekbang.org/article/2355)
 * [《初识 Service Mesh》](https://www.jianshu.com/p/e23e3e74538e)
 
-* [《什么是Service Mesh？》](https://time.geekbang.org/article/2355)
 
 # 项目管理
 
